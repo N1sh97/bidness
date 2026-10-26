@@ -3,9 +3,13 @@ module api
 go 1.27.2
 
 require (
+	github.com/duckdb/duckdb-go/v2 v2.20000.0
+	github.com/go-chi/chi/v5 v5.5.0
+)
+
+require (
 	github.com/apache/arrow-go/v18 v18.5.1 // indirect
 	github.com/duckdb/duckdb-go-bindings v0.20000.0 // indirect
-	github.com/duckdb/duckdb-go/v2 v2.20000.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
 	github.com/goccy/go-json v0.10.5 // indirect
 	github.com/google/flatbuffers v25.12.19+incompatible // indirect
