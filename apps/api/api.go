@@ -3,7 +3,6 @@ package api
 import (
 	"api/sql"
 	"context"
-	"fmt"
 	"log"
 )
 
@@ -17,14 +16,7 @@ func Main() {
 	}
 	defer db.Close()
 
-	var count int64
-	err = db.QueryRowContext(
-		ctx,
-		"SELECT COUNT(*) FROM authors",
-	).Scan(&count)
-	if err != nil {
+	if err := RunHTTPServer(ctx, db); err != nil {
 		log.Fatal(err)
 	}
-
-	fmt.Printf("Total authors imported: %d\n", count)
 }
