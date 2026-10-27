@@ -28,8 +28,8 @@ dist-ssr
 *.dll
 *.so
 *.dylib
-/api/bin/*
-!/api/bin/.gitkeep
+apps/api/bin/*
+!apps/api/bin/.gitkeep
 
 # Test binary, built with `go test -c`
 *.test
@@ -42,5 +42,5 @@ coverage.*
 profile.cov
 
 # Data files
-/api/data/database/*
-!/api/data/database/.gitkeep
+apps/api/data/database/*
+!apps/api/data/database/.gitkeep

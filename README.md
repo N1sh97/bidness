@@ -133,7 +133,7 @@ See the official DuckDB [installation](https://duckdb.org/install/?platform=wind
 
 #### Open the database
 
-From the `api/` directory, run:
+From the `apps/api/` directory, run:
 
 `duckdb ./data/database/bidness.duckdb`
 
